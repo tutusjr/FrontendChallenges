@@ -24,14 +24,10 @@
 }
 
 
-html{
-  height: 100%;
-}
 body{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
   background: var(--background-color);
 }
 
@@ -39,9 +35,9 @@ span{
   color: var(--success-color);
 }
 
+
+
 .container{
-  width: 600px;
-  min-height: 630px;
   background: white;
   border-radius: 20px;
   box-shadow:  0 0 20px  rgba(0,0,0,0.1);
@@ -62,11 +58,17 @@ span{
 }
 
 p{
-  font-size: 14px;
+  font-size: 13px;
   padding: 8px 0;
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 label{
-  font-size: 15px;
+  font-size: 13px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .radio-label {
   display: flex;
@@ -131,6 +133,7 @@ label{
   cursor: pointer;
   appearance: none;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 1em;
@@ -187,4 +190,6 @@ label{
 .Toastify__close-button{
   display: none;
 }
+
+
 

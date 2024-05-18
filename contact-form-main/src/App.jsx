@@ -55,12 +55,12 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <div className="container w-[300px] md:w-[700px]">
         <h1 className="text-[20px] font-bold">Contact Us</h1>
         {/* form */}
         <form onSubmit={formik.handleSubmit}>
           {/* names */}
-          <div className="flex p-2 gap-5">
+          <div className="flex p-2 gap-3 flex-col md:flex-row md:gap-5">
             {/* firstname */}
             <div className="flex flex-col flex-1">
               <label htmlFor="first_name">
@@ -132,7 +132,7 @@ function App() {
             <p>
               Query type <span className="text-[success-color]">*</span>
             </p>
-            <div className="flex gap-5">
+            <div className="flex gap-1 flex-col md:flex-row md:gap-5">
               {/* first-radio */}
               <div className="flex-1">
                 <input
@@ -236,7 +236,7 @@ function App() {
                 className="checkbox-label unselectable cursor-default"
                 htmlFor="checkbox"
               >
-                Subscribe to newsletter{" "}
+                I consent to being contacted by the team
                 <span className="text-accent-color">*</span>
               </label>
             </div>
