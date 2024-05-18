@@ -21,10 +21,11 @@
   --toastify-toast-max-height: 110px;
   --toastify-toast-height: 100px;
   --toastify-font-family: 'Karla', sans-serif;
+  
 }
 
 
-body{
+body,html{
   height: 100vh;
   display: grid;
   place-items: center;
@@ -184,7 +185,13 @@ label{
 }
 
 .Toastify__toast-container{
-  width: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  @media (min-width: 768px) {
+    width: 500px;
+  }
 }
 
 .Toastify__close-button{
