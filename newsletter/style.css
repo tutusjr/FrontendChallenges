@@ -142,9 +142,21 @@ body {
   width: 400px;
 }
 
+
+
 .success {
   padding: 20px 30px;
   display: none;
+}
+.success-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+.dismiss-button {
+    display: flex;
+    align-items: end;
 }
 
 .success-title {
@@ -157,10 +169,6 @@ body {
   padding: 20px 0;
 }
 
-.success-button {
-  margin-top: 10px;
-}
-
 .success-icon {
   width: 55px;
   height: 55px;
@@ -168,7 +176,7 @@ body {
 }
 
 .success-visible {
-  display: block;
+  display: grid;
 }
 
 @media (max-width: 877px) {
@@ -211,6 +219,9 @@ body {
     }
     .email-p-wrapper{
         margin-top: 10px;
+    }
+    .success{
+        height: 100vh;
     }
 }
 
