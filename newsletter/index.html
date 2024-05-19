@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    
+    <div id="container" class="container">
+      <!-- left side -->
+      <div id="left-side" class="left-side content">
+        <h1 class="left-side-title">Stay updated!</h1>
+        <p class="left-side-paragraph">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list">
+          <li class="list-item">Product discovery and building what matters</li>
+          <li class="list-item">Measuring to ensure updates are a success</li>
+          <li class="list-item">And much more!</li>
+        </ul>
+        <!-- form -->
+        <form id="emailForm">
+          <label for="email">
+            <div class="email-p-wrapper">
+              <p class="email-subtitle">Email address</p>
+              <p id="error-message" class="email-error">Valid email required</p>
+            </div>
+            <input
+              class="email-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="email@company.com"
+            />
+          </label>
+        </form>
+        <button id="submit-button" class="button">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <!-- right side -->
+      <div id="right-side" class="right-side content">
+        <picture>
+          <source  media="(min-width: 877px)" srcset="./assets/images/illustration-sign-up-desktop.svg" />
+          <img class="right-side-image" src="./assets/images/illustration-sign-up-mobile.svg" alt="Sign Up Illustration">
+      </picture>
+      </div>
+      <!-- success screen -->
+      <div id="success" class="success">
+        <img
+          class="success-icon"
+          src="./assets/images/icon-success.svg"
+          alt=""
+          class="mobile-img"
+        />
+        <h1 class="success-title">Thanks for subscribing!</h1>
+        <p id="success-message" class="success-message"></p>
+        <button id="dismiss-button" class="button success-button">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
